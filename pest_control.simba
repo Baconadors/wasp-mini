@@ -1,3 +1,4 @@
+{$DEFINE SCRIPT_ID := ' '} // Need to put a blank Script ID to have the script work.
 {$DEFINE SRL_USE_REMOTEINPUT}
 {$DEFINE SCRIPT_GUI}
 {$I SRL-T/osr.simba}
