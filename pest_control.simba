@@ -1,4 +1,4 @@
-{$DEFINE SCRIPT_ID := ' '} // Need to put a blank Script ID to have the script work.
+{$DEFINE SCRIPT_ID := ''}
 {$DEFINE SRL_USE_REMOTEINPUT}
 {$DEFINE SCRIPT_GUI}
 {$I SRL-T/osr.simba}
@@ -89,7 +89,7 @@ begin
 
   RSMonsters.AnyMonster.UpText := ['Attack'];
   RSMonsters.AnyMonster.Setup(50, 5, [Self.Center]);
-  RSMonsters.AnyMonster.DotFilter.Setup([5752, 5625, 3], False);
+  RSMonsters.AnyMonster.DotFilter.Setupcircle([5752, 5625, 3], False); // Credit: unit. DM unit for AIO Slayer script.
   RSMonsters.AnyMonster.Filter.MinimapDot := True;
   RSMonsters.AnyMonster.Filter.UpText := True;
   CombatHandler.Setup(RSMonsters.AnyMonster, 1200);
